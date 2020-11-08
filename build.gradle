@@ -24,6 +24,7 @@ micronaut {
 
 dependencies {
     kapt("info.picocli:picocli-codegen:4.2.0")
+
     implementation("io.micronaut:micronaut-validation")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
@@ -34,9 +35,16 @@ dependencies {
     implementation("javax.annotation:javax.annotation-api")
     implementation("io.micronaut.kotlin:micronaut-kotlin-extension-functions")
     implementation("org.apache.logging.log4j:log4j-core:2.12.1")
+    implementation("org.jsoup:jsoup:1.12.1")
+    implementation("net.sourceforge.htmlunit:htmlunit:2.34.1")
+    implementation("io.micronaut.views:micronaut-views-thymeleaf")
+    implementation( group: "org.apache.commons", name: "commons-email", version: "1.5")
+
     runtimeOnly("org.apache.logging.log4j:log4j-api:2.12.1")
     runtimeOnly("org.apache.logging.log4j:log4j-slf4j-impl:2.12.1")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
+
+    testImplementation("com.icegreen:greenmail:1.5.7")
 //    testImplementation("io.micronaut:micronaut-http-client")
 }
 
