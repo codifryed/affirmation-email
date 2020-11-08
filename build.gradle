@@ -3,7 +3,7 @@ plugins {
     id "org.jetbrains.kotlin.kapt" version "1.4.10"
     id "org.jetbrains.kotlin.plugin.allopen" version "1.4.10"
     id "com.github.johnrengelman.shadow" version "6.1.0"
-    id "io.micronaut.application" version '1.0.5'
+    id "io.micronaut.application" version "1.0.5"
 }
 
 version "0.1"
@@ -37,24 +37,22 @@ dependencies {
     runtimeOnly("org.apache.logging.log4j:log4j-api:2.12.1")
     runtimeOnly("org.apache.logging.log4j:log4j-slf4j-impl:2.12.1")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
-    testImplementation("io.micronaut:micronaut-http-client")
+//    testImplementation("io.micronaut:micronaut-http-client")
 }
 
 mainClassName = "com.guyboldon.AffirmationEmailCommand"
+
 java {
-    sourceCompatibility = JavaVersion.toVersion('11')
+    sourceCompatibility = JavaVersion.toVersion("11")
 }
 
 compileKotlin {
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = "11"
     }
 }
 compileTestKotlin {
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = "11"
     }
 }
-
-
-
