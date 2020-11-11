@@ -1,3 +1,33 @@
 micronaut:
   application:
     name: affirmationEmail
+
+app:
+  language:
+    de:
+      website: ENC(UgYYqvZoe4uQ46uIPxeYVhwZ9FiPQgaH08r7KwmlbKdGDXjE6EjVy4HJp6e/Vbe73A7uIFYBnDFqv/HOsfxftZmDN+56U09VXW9XPDL7B+gLQD2zrqhILbLMXhxU70Wc)
+      header: ENC(92TJ72WvMDpnMLZfnFncAlnmIZ0zl2VIQeRxfGQAm6Lm7I9fHum+lDZeT/P/+fF9Q525/GDUq0ufOjyPix7py8/sW4+ahjlaPAhAq+y4Hdp7bWkCAqjs7lno41UPlaXD)
+      copyright: ENC(ItEmuFcQetMxPiSjqx19nOB1z3v78Q31D84I1h72mpK3VVXfP8iiAEDfBNaTartWS8cqNdulfhNzKt+3AUDbFDTncf11Tgjjnf4megnQupKLvY/JvIlsgsq6n18HrhjjyyluO4s29krLvJ+VEOcECZ5rtzPkqWGqHYEFhHQyzfScccDyFpITZ8u1CW+v5TrbDUpstzYISm7tF/OQqQuwlHiXrzYYe3z1pNPwPWv4pazT0GZwGFtL4A143qtyNH7U)
+      subject: ENC(V0WRLm2YEQNBs1g3ycSFAfHRnYcW6R7m4t5w0n8p5J/4J7srb5TuCuFnCmuePtWl3hsAo91FNavFULTzujHqxk+VV30X7Cw8mqKUo8Vow3g=)
+      footer: ENC(9TdUhGUhu/vOryl22A35GFZd1Fy50VsaTwL0WJO/Wdz3u8DXRAJbSyrD5I55zOgBEVQWA/gZtfHhay5e6Xaum5NCellRzl6k+P56I/N+RULAKoxBJXTlOOAVbpBalctMTqIb4qiHRRR0pjH+5PtcFtnfGGzBmCqmNN9mME/Fjpy9fQ+6Y1NBnJfNGNDhGgGE+DusHnRKNnJ3/SYl4r/NUg==)
+      subs: ENC(yaSejP5v371MV5JMsxsw6+/M9SLFuA8GjjRqX0gFXQZ+VKQuiUF3JwNHtqAiYnuFgU/t1PT3f8DGC1EtFVVzHO7bxWVQWzZdppTCtxYppDOO+5RYLAYlSojR/j1I97uG)
+    en:
+      website: ENC(rlK9CpQ+68OZwuanYWvmrMpXBMQFl00lRv8/NZApjpnlwa5HEbHIB28lxzzh8jbCxoVQQIgE8fr3RYPSnRN+9ryW3Lpx8zAvJK6Y9ZtixGI=)
+      header: ENC(Zp9Ca/gCFk27MpX5HRZRMaXRWuYfVBdrOR0PlRMzbX9+PEJVVvniE5ohOneIuiZGWIWakJrij2XHSeX7B/3JrMh39tVt5rGDijbgIN8X8tw=)
+      copyright: ENC(88o6VlBLTfEJj7WzcGQOgJWzg7pir/gtTl6LhUdngX+pYLZpS/I95hO9Mw3JwrX3zHXgqom2UJh4Mhkm2R/cppbyjCFhyRID8WIf4ZCnOZKHUsG3xEKSamiYCLqjACUSkpBh4qpJuXcp5Qd7oOzh7W0e2H+MC8wS5pwMImCk8VIbVKvQWBX/WvSJWPwh8G2Dz09u/Zw0lWChS+Yw0PjZnmcsUyaAuehihe09Klwb3kI=)
+      subject: ENC(N9rj5wv5b36E1lbeDEBVxmCih1BnmNnPq5H45M2+d/ad3ZbQe8smJLPLNZEJKCazeRbM5Issc0bIrhlb5MwFQA==)
+      footer: ENC(VvKLY7suBC4LdmFQN25qJ/4If1rbML7LfoAUaol4Ql6bJTRzg6yDVpc0/ODJu2C4w9VuPypho9eT6vu3egSfz33aOF7qLd10WjuyXQGkczL7kzZCmGMXR0h8sM5AVjInf8H5rxlZOZvIXIzGBd/68uDng3y8nYR0l7c7LkSEIOhwoto5hPtD4lGmIXuoZ3DyMNkb4Y+wyuH1hRlAU5W/OUOp38TSh6xYkChm3DGuFdzV4XPjbvYx32HoUH7LQZNok/pp/GSynOK8ck157wDNyw4oHlu9KvUI5o2XpI2CH1NwJ3jcuq6dJ1sdY3ZGneFWRcCU/bfUbnO8k5GG0g1IChGdYhnjuvjty9NH5fUazX33JQeWCBW3vynEzHRIxJrHg4/Q9J4IbSFHsUjWrgklGJpxLFB0mxAL6ubNFMsiO8rN/g5LE/UuwPEE74LzbhtMj2QxmTTCMqa6VnAUSI/tI/ULY/9BTVOkTogvkS2hNvLCdOsGg8S5cHWoqu1Pb66MtejSYUJ3s+Hb2+oMbS0EuhlhRM0vSkH4PPXfyC05HVGqNakQEY69HMmywp+pze7IEB5pANg/uq7b5O5jZ2Kb8mk1C5bvMYRDLOY02lcq5ZN9NBdHq/JNUMoIK2e2eYgfuYogKpPWUZhMff+Z1REiy/yzldJjh/TtOGyrdghj+xw=)
+      subs: ENC(ig+4KP+wqV0/wxBPC8njVcpKvt7oDLJcGDlWhOf3d/3GV8MHk/GSi00lMkv0H4LYttA1gnWUyJnCkH3GfeQQ/DOjvOV47C5V/+Devr2vRrN6rxxVuj1SVSsbyn9tyHEp)
+  mail:
+    host: ENC(8ifAtK3Hymun0eyJtAuwCZe/8P8CVpezk5tKjo+TnHU67hQtYjYBNFROD5bjL8GB1pO30hPxYPJ3ZffYnlpnoA==)
+    port: 465
+    ssl: true
+    username: ENC(Q4PrLrcKRj7Osfn62EFeV8u04VIkuyDM2ttWcdqaomF2s1eIbzISRC82t6D6CaeTUctDR7lGnsZCD+lqkxEhrQ==)
+    password: ENC(H9KHCRkZkOW6yxgnapVloAPlt9ivbChrcIfTg3PnDYrFDPiiozbZVZVnqm4+GzdT)
+    connectiontimeout: 8s
+    timeout: 8s
+    wait: 2s
+    retries: 3
+    fromName: ENC(3yjrQiF6dmUwCu9jqBuWZi+AgjjmIozjaXcF41qGejBh+M+BeImkcGLCg9lk3Rhz8pYZLLV7Ag9RzXru2itE2Q==)
+    fromEmail: ENC(vnLYruyzTYCzgU51pupMWrFgG/Gfk0loGTz7XsdKZSNbWWJZrV+VjS3r3iddPbVgTCNYh3Ihj+G9CmRgus8QJw==)
+    debug: false

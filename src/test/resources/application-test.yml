@@ -1,0 +1,35 @@
+# Testing Values
+
+#jasypt:
+#  encryptor:
+#    password:
+
+app:
+  language:
+    de:
+      website: ENC(UgYYqvZoe4uQ46uIPxeYVhwZ9FiPQgaH08r7KwmlbKdGDXjE6EjVy4HJp6e/Vbe73A7uIFYBnDFqv/HOsfxftZmDN+56U09VXW9XPDL7B+gLQD2zrqhILbLMXhxU70Wc)
+      header: HEADER_TITLE!
+      copyright: COPYRIGHT_FOREVER!
+      subject: SUBJECT!!!
+      footer: FOOTER!!!
+      subs: '[ { "name": "tester", "email": "tester@localhost" }, { "name": "tester", "email": "tester@localhost" }, { "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" } ]'
+    en:
+      website: ENC(rlK9CpQ+68OZwuanYWvmrMpXBMQFl00lRv8/NZApjpnlwa5HEbHIB28lxzzh8jbCxoVQQIgE8fr3RYPSnRN+9ryW3Lpx8zAvJK6Y9ZtixGI=)
+      header: HEADER_TITLE!
+      copyright: COPYRIGHT_FOREVER!
+      subject: SUBJECT!!!
+      footer: FOOTER!!!
+      subs: '[ { "name": "tester", "email": "tester@localhost" }, { "name": "tester", "email": "tester@localhost" }, { "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" },{ "name": "tester", "email": "tester@localhost" } ]'
+  mail:
+    host: localhost
+    port: 3025
+    ssl: false
+    username: user@localhost
+    password: pass
+    connectiontimeout: 3s
+    timeout: 3s
+    wait: 1s
+    retries: 3
+    debug: true
+    fromName: user
+    fromEmail: user@localhost
