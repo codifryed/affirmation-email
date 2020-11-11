@@ -1,10 +1,10 @@
 plugins {
-    id "org.jetbrains.kotlin.jvm" version "1.4.10"
-    id "org.jetbrains.kotlin.kapt" version "1.4.10"
-    id "org.jetbrains.kotlin.plugin.allopen" version "1.4.10"
+    id "org.jetbrains.kotlin.jvm" version "${kotlinVersion}"
+    id "org.jetbrains.kotlin.kapt" version "${kotlinVersion}"
+    id "org.jetbrains.kotlin.plugin.allopen" version "${kotlinVersion}"
     id "com.github.johnrengelman.shadow" version "6.1.0"
     id "io.micronaut.application" version "1.1.0"
-    id "com.github.ben-manes.versions" version "0.35.0"
+    id "com.github.ben-manes.versions" version "0.36.0"
 }
 
 version "2.0"
@@ -24,46 +24,48 @@ micronaut {
 }
 
 dependencies {
-    kapt("info.picocli:picocli-codegen:4.5.2")
+    kapt("info.picocli:picocli-codegen:${picocliVersion}")
 
     implementation("io.micronaut:micronaut-validation")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("io.micronaut.kotlin:micronaut-kotlin-runtime")
     implementation("io.micronaut:micronaut-runtime")
-    implementation("info.picocli:picocli:4.5.2")
+    implementation("info.picocli:picocli:${picocliVersion}")
     implementation("io.micronaut.picocli:micronaut-picocli")
     implementation("javax.annotation:javax.annotation-api")
     implementation("io.micronaut.kotlin:micronaut-kotlin-extension-functions")
-    implementation("org.apache.logging.log4j:log4j-core:2.13.3")
+    implementation("org.apache.logging.log4j:log4j-core:${log4jVersion}")
     implementation("org.jsoup:jsoup:1.13.1")
     implementation("net.sourceforge.htmlunit:htmlunit:2.44.0")
     implementation("io.micronaut.views:micronaut-views-thymeleaf")
     implementation(group: "org.apache.commons", name: "commons-email", version: "1.5")
     implementation(group: "org.jasypt", name: "jasypt", version: "1.9.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1")
 
-    runtimeOnly("org.apache.logging.log4j:log4j-api:2.13.3")
-    runtimeOnly("org.apache.logging.log4j:log4j-slf4j-impl:2.13.3")
+    runtimeOnly("org.apache.logging.log4j:log4j-api:${log4jVersion}")
+    runtimeOnly("org.apache.logging.log4j:log4j-slf4j-impl:${log4jVersion}")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     testImplementation("io.micronaut.test:micronaut-test-junit5:2.2.1")
-    testImplementation("com.icegreen:greenmail:1.5.7")
-//    testImplementation("io.micronaut:micronaut-http-client")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.7.0")
+    testImplementation("com.icegreen:greenmail:${greenmailVersion}")
+    testImplementation("com.icegreen:greenmail-junit5:${greenmailVersion}")
 }
 
 mainClassName = "com.guyboldon.AffirmationEmailCommand"
 
 java {
-    sourceCompatibility = JavaVersion.toVersion("11")
+    sourceCompatibility = JavaVersion.toVersion("${javaVersion}")
 }
 
 compileKotlin {
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "${javaVersion}"
     }
 }
 compileTestKotlin {
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "${javaVersion}"
     }
 }
