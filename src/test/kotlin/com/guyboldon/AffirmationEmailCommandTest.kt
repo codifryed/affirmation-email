@@ -3,23 +3,23 @@ package com.guyboldon
 import io.micronaut.configuration.picocli.PicocliRunner
 import io.micronaut.context.ApplicationContext
 import io.micronaut.context.env.Environment
+import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.Test
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
-import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.Assertions
 
 class AffirmationEmailCommandTest {
 
     @Test
-    fun testWithCommandLineOption() {
+    fun testWithEncryptionCommandLineOption() {
         val ctx = ApplicationContext.run(Environment.CLI, Environment.TEST)
         val baos = ByteArrayOutputStream()
         System.setOut(PrintStream(baos))
 
-        val args = arrayOf("-v")
+        val args = arrayOf("-e", "me")
         PicocliRunner.run(AffirmationEmailCommand::class.java, ctx, *args)
-
-        Assertions.assertTrue(baos.toString().contains("Hi!"))
+        println(baos.toString())
+        assertTrue(baos.toString().contains("Encrypted text:"))
 
         ctx.close()
     }
