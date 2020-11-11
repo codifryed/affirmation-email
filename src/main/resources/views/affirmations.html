@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        #affirmation {
+            margin: auto;
+            text-align: center;
+            max-width: 565px;
+            font-family: sans-serif;
+        }
+
+        #title {
+
+        }
+
+        .affirmation-hr {
+            border-top: 1px solid;
+        }
+
+        #affirmation-date {
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        #affirmation-title, #affirmation-quote, .affirmation-paragraph, #affirmation-prayer, #affirmation-page-text,
+        #affirmation-copyright {
+            text-align: justify;
+            cursor: default;
+            user-select: none;
+        }
+
+        #affirmation-title {
+            text-align: center !important;
+            font-style: italic;
+        }
+
+        #affirmation-quote {
+            font-style: italic;
+        }
+
+        .affirmation-paragraph {
+
+        }
+
+        #affirmation-prayer {
+            font-style: italic;
+        }
+
+        #affirmation-page-text {
+            text-align: center !important;
+        }
+
+        #affirmation-copyright {
+            text-align: center !important;
+        }
+
+        #affirmation-footer {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<div id="affirmation">
+    <h1 id="title" th:utext="${header}">Strengthening My Recovery<br/>Daily Affirmation</h1>
+    <hr class="affirmation-hr"/>
+    <span id="affirmation-date" th:text="${date}">January 1st</span>
+    <hr class="affirmation-hr"/>
+    <h2 id="affirmation-title" th:text="${title}">The Title</h2>
+    <div id="affirmation-quote">
+        <p><em><strong th:text="${quote}">Quote</strong></em></p>
+    </div>
+    <div class="affirmation-paragraph" th:each="paragraph : ${contents}">
+        <p th:text="${paragraph}">paragraph</p>
+    </div>
+    <div id="affirmation-prayer">
+        <p><em th:text="${prayer}">Prayer</em></p>
+    </div>
+    <div id="affirmation-page-text">
+        <p th:text="${pageText}">Text</p>
+    </div>
+    <div id="affirmation-copyright">
+        <p th:utext="${copyright}">Copyright</p>
+    </div>
+    <div id="affirmation-footer">
+        <br/><br/>
+        <p th:utext="${footer}">Footer</p>
+    </div>
+</div>
+</body>
+</html>
